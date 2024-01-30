@@ -15,7 +15,9 @@ function onSpeak(e) {
 }
 
 function exibeNumero(numero) {
-    elementoNumero
+    elementoNumero.innerHTML += `
+    ${numero}
+    `
 }
 
 recognition.addeventListener('end', () => recognition.start())
