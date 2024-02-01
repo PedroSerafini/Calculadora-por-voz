@@ -15,14 +15,14 @@ function exibeOperador(operador) {
 
 operatorEqual.addEventListener('click', () => {
     var resultado = calcula()
-    exibirResltado(resultado)
+    exibirResultado(resultado)
 })
 
 function calcula() {
     return eval(elementoNumero.innerHTML)
 }
 
-function exibirResltado(resultado) {
+function exibirResultado(resultado) {
     elementoNumero.innerHTML = `
     ${resultado}
     `

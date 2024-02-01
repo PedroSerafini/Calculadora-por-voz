@@ -12,6 +12,7 @@ recognition.addeventListener('result', onSpeak)
 function onSpeak(e) {
     numero = e.results[0][0].transcript
     exibeNumero(numero)
+    validacao(numero)
 }
 
 function exibeNumero(numero) {
